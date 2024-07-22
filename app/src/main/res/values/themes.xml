@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.LUTMobile" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="android:colorBackground">@color/backgroundColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/hintTextColor</item>
+    </style>
+
+</resources>

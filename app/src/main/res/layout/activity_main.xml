@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/gestureHintText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/swipe_right_to_strike_through_long_press_to_delete_and_swipe_left_to_move_to_later_list"
+        android:textColor="@color/hintTextColor"
+        android:textSize="14sp"
+        android:padding="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/groceryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/backgroundColor"
+        android:layout_below="@id/gestureHintText"
+        android:layout_above="@id/buttonsLayout"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/viewLaterListButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:drawableStart="@drawable/baseline_access_time_24"
+            android:drawablePadding="0dp"
+            android:text="@string/later_list"
+            android:layout_gravity="center"
+            android:contentDescription="@string/view_later_list" />
+
+        <Button
+            android:id="@+id/addItemButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:drawableStart="@drawable/baseline_add_24"
+            android:drawablePadding="0dp"
+            android:text="@string/add_item"
+            android:layout_gravity="center"
+            android:contentDescription="@string/add_item" />
+    </LinearLayout>
+
+</RelativeLayout>
